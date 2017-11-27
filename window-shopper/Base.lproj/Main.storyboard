@@ -61,12 +61,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-Tw-dga">
-                                <rect key="frame" x="158" y="348" width="59" height="21"/>
+                                <rect key="frame" x="162.5" y="348" width="50" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="23K-hQ-2hB"/>
-                                    <constraint firstAttribute="height" constant="21" id="awV-Sx-wzM"/>
+                                    <constraint firstAttribute="width" constant="50" id="23K-hQ-2hB"/>
+                                    <constraint firstAttribute="height" constant="20" id="awV-Sx-wzM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
