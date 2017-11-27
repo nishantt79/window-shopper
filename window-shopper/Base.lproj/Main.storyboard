@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -46,27 +51,69 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQt-wL-66W">
+                                <rect key="frame" x="20" y="295" width="335" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Uzp-6n-uV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="49"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-Tw-dga">
+                                <rect key="frame" x="158" y="348" width="59" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="23K-hQ-2hB"/>
+                                    <constraint firstAttribute="height" constant="21" id="awV-Sx-wzM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AB-3R-mFv">
+                                <rect key="frame" x="20" y="607" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0a2-ko-NEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearcalBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrH-Du-sex"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wQt-wL-66W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Qk-rh-oZP"/>
                             <constraint firstItem="Cco-ji-jFw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Gd-6d-RVs"/>
                             <constraint firstItem="hmu-aM-bgt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="6Oh-g5-MQV"/>
                             <constraint firstItem="Cco-ji-jFw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7YI-up-OHa"/>
+                            <constraint firstItem="cZz-Tw-dga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8q5-bU-Q3b"/>
                             <constraint firstItem="hmu-aM-bgt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IWx-YI-5ut"/>
                             <constraint firstItem="ua4-gF-fMg" firstAttribute="trailing" secondItem="whr-rS-ZKl" secondAttribute="trailing" id="MX4-pq-gQb"/>
                             <constraint firstItem="ua4-gF-fMg" firstAttribute="height" secondItem="whr-rS-ZKl" secondAttribute="height" id="Qcq-Sy-DOF"/>
+                            <constraint firstItem="wQt-wL-66W" firstAttribute="width" secondItem="ua4-gF-fMg" secondAttribute="width" id="QoM-3N-0Ls"/>
                             <constraint firstItem="whr-rS-ZKl" firstAttribute="top" secondItem="hmu-aM-bgt" secondAttribute="bottom" constant="35" id="Rx1-M3-MV8"/>
+                            <constraint firstItem="wQt-wL-66W" firstAttribute="top" secondItem="ua4-gF-fMg" secondAttribute="bottom" constant="40" id="Tqp-8M-IcL"/>
+                            <constraint firstItem="6AB-3R-mFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UHQ-Hz-xKl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whr-rS-ZKl" secondAttribute="trailing" constant="20" id="Uzv-Bv-HVN"/>
                             <constraint firstItem="ua4-gF-fMg" firstAttribute="top" secondItem="whr-rS-ZKl" secondAttribute="bottom" constant="25" id="ZKu-Cu-nQY"/>
+                            <constraint firstItem="cZz-Tw-dga" firstAttribute="top" secondItem="wQt-wL-66W" secondAttribute="bottom" constant="5" id="fte-bI-Itw"/>
                             <constraint firstItem="Cco-ji-jFw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ms6-dk-h1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6AB-3R-mFv" secondAttribute="trailing" constant="20" id="rUr-1p-Mj3"/>
                             <constraint firstItem="ua4-gF-fMg" firstAttribute="leading" secondItem="whr-rS-ZKl" secondAttribute="leading" id="rhB-10-NgD"/>
                             <constraint firstItem="Cco-ji-jFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xqt-sH-bEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6AB-3R-mFv" secondAttribute="bottom" constant="20" id="ywJ-kl-tD3"/>
                             <constraint firstItem="whr-rS-ZKl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z9M-On-QM4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="cZz-Tw-dga" id="fJO-ir-43u"/>
                         <outlet property="priceTxt" destination="ua4-gF-fMg" id="bhm-Pz-9Lz"/>
+                        <outlet property="resultLbl" destination="wQt-wL-66W" id="BoA-bT-VUK"/>
                         <outlet property="wageTxt" destination="whr-rS-ZKl" id="eEs-hi-OBV"/>
                     </connections>
                 </viewController>
